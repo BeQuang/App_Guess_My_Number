@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+#frame {
+    position: fixed; /* Để hình ảnh cố định và không bị cuộn khi trang web cuộn */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đặt z-index âm để đảm bảo hình ảnh nằm dưới nội dung khác */
+}
+
+.container {
+    position: relative;
+}
+
+.none {
+    display: none;
+}
+
+.caseOpen {
+    width: 21.5%;
+    height: 28%;
+    position: fixed;
+    top: 44%;
+    left: 61.5%;
+}
+
+.caseClose {
+    width: 36.5%;
+    height: 35%;
+    position: fixed;
+    top: 37%;
+    left: 53.5%;
+}
+
+.rule,
+.game {
+    position: absolute;
+    width: 26%;
+    top: 400px;
+    left: 12%;
+    padding-top: 100px;
+}
+
+.rule__title,
+.game__title {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.rule__desc {
+    font-size: 4rem;
+    padding-top: 56px;
+}
+
+.rule__iconBox {
+    font-size: 10rem;
+    text-align: center;
+    padding-top: 56px;
+}
+
+.game {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game__number {
+    width: 100%;
+    padding-top: 128px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button,
+.game__curNumber {
+    min-width: 200px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #a15f09;
+    font-size: 8rem;
+}
+
+.game__curNumber {
+    margin: 0 32px;
+    text-align: center;
+}
+
+.game__check {
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 100px;
+    width: 300px;
+}
+
+.game__again {
+    margin-top: 300px;
+}

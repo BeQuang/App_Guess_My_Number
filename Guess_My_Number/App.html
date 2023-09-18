@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/App.css">
+    <link rel="shortcut icon" type="image/png" href="./images/CS.png">
+    <title>Guess My Number!</title>
+</head>
+<body>
+    <div class="app">
+        <img src="./images/background.png" alt="" id="frame">
+        <img src="./images/dong ruong@4x.png" alt="" class="caseOpen">
+        <img src="./images/Group 2.png" alt="" class="caseClose none">
+
+        <div class="container">
+            <div class="rule">
+                <h1 class="rule__title">Rule</h1>
+                <p class="rule__desc">
+                    HFAAJFJ ASFDHASFHAJ SJFHA AHFJAK HJASFH AKFHKFJASHFJH H 
+                    HAFK ASHF AKFHA HKSFJH AKJFA AKHSF 
+                </p>
+                <div class="rule__iconBox">
+                    <i class="fa-regular fa-circle-play rule__icon"></i>
+                </div>
+            </div>
+
+            <div class="game none">
+                <h1 class="game__title">GUESS MY NUMBER!</h1>
+                <div class="start">
+                    <div class="game__number">
+                        <button type="button" class="game__lowNumber">0</button>
+                        <input class="game__curNumber"></input>
+                        <button type="button" class="game__hightNumber">1000</button>
+                    </div>
+                    <button type="button" class="game__check">Check</button>
+                </div>
+                <div class="end none">
+                    <button type="button" class="game__again">Play again!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/App.js"></script>
+</body>
+</html>
