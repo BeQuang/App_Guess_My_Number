@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/App.css">
     <link rel="shortcut icon" type="image/png" href="./images/CS.png">
@@ -12,36 +16,22 @@
 <body>
     <div class="app">
         <img src="./images/background.png" alt="" id="frame">
-        <img src="./images/dong ruong@4x.png" alt="" class="caseOpen">
-        <img src="./images/Group 2.png" alt="" class="caseClose none">
+        <img src="./images/Group.png" alt="" class="caseClose animate__animated">
+        <img src="./images/Group 2.png" alt="" class="caseOpen none animate__animated">
+    </div>
 
-        <div class="container">
-            <div class="rule">
-                <h1 class="rule__title">Rule</h1>
-                <p class="rule__desc">
-                    HFAAJFJ ASFDHASFHAJ SJFHA AHFJAK HJASFH AKFHKFJASHFJH H 
-                    HAFK ASHF AKFHA HKSFJH AKJFA AKHSF 
-                </p>
-                <div class="rule__iconBox">
-                    <i class="fa-regular fa-circle-play rule__icon"></i>
-                </div>
-            </div>
-
-            <div class="game none">
-                <h1 class="game__title">GUESS MY NUMBER!</h1>
-                <div class="start">
-                    <div class="game__number">
-                        <button type="button" class="game__lowNumber">0</button>
-                        <input class="game__curNumber"></input>
-                        <button type="button" class="game__hightNumber">1000</button>
-                    </div>
-                    <button type="button" class="game__check">Check</button>
-                </div>
-                <div class="end none">
-                    <button type="button" class="game__again">Play again!</button>
-                </div>
-            </div>
+    <div class="game">
+        <div class="game__group-number">
+            <button class="game__low-number animate__animated"></button>
+            <input type="text" class="game__cur-number">
+            <button class="game__hight-number animate__animated"></button>
         </div>
+        <button class="game__check">Crack it!</button>
+        <button class="game__again none">Play again!</button>
+    </div>
+
+    <div class="board-color">
+        
     </div>
 
     <script src="./javascript/App.js"></script>

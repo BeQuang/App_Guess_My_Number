@@ -20,97 +20,72 @@ html {
     z-index: -1; /* Đặt z-index âm để đảm bảo hình ảnh nằm dưới nội dung khác */
 }
 
-.container {
-    position: relative;
-}
-
 .none {
     display: none;
 }
 
-.caseOpen {
-    width: 21.5%;
-    height: 28%;
-    position: fixed;
-    top: 44%;
-    left: 61.5%;
-}
-
 .caseClose {
-    width: 36.5%;
-    height: 35%;
     position: fixed;
-    top: 37%;
-    left: 53.5%;
+    top: 62%;
+    left: 44%;
+    width: 12%;
 }
 
-.rule,
+.caseOpen {
+    position: fixed;
+    top: 60%;
+    left: 41%;
+    width: 16%;
+}
+
 .game {
-    position: absolute;
-    width: 26%;
-    top: 400px;
-    left: 12%;
-    padding-top: 100px;
-}
-
-.rule__title,
-.game__title {
-    font-size: 8rem;
+    position: fixed;
+    width: 70%;
+    top: 32%;
+    left: 15%;
     text-align: center;
 }
 
-.rule__desc {
-    font-size: 4rem;
-    padding-top: 56px;
+.game__group-number {
+    display: flex;
+    justify-content: space-between;
 }
 
-.rule__iconBox {
+.game__low-number,
+.game__hight-number {
+    background-color: #1D849F;
+    border-radius: 24px;
+    min-width: 28%;
+    min-height: 150px;
+    border: transparent;
     font-size: 10rem;
-    text-align: center;
-    padding-top: 56px;
+    color: #FFE0AC;
 }
 
-.game {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-}
-
-.start {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.game__number {
-    width: 100%;
-    padding-top: 128px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-button,
-.game__curNumber {
-    min-width: 200px;
-    height: 100px;
-    border-radius: 8px;
-    background-color: #a15f09;
-    font-size: 8rem;
-}
-
-.game__curNumber {
-    margin: 0 32px;
+.game__cur-number {
+    background-color: #1D849F;
+    border-radius: 24px;
+    max-width: 25%;
+    min-height: 150px;
+    border: transparent;
+    font-size: 10rem;
+    color: #FFE0AC;
     text-align: center;
 }
 
-.game__check {
-    font-size: 8rem;
-    text-align: center;
-    margin-top: 100px;
-    width: 300px;
-}
-
+.game__check,
 .game__again {
-    margin-top: 300px;
+    background-color: #1D849F;
+    border-radius: 24px;
+    min-width: 25%;
+    min-height: 120px;
+    border: transparent;    
+    font-size: 9rem;
+    color: #FFE0AC;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.board-color {
+    
 }

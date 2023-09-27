@@ -7,58 +7,67 @@ let upperBound = 1000;
 
 console.log(secretNumber);
 
-const ruleBtn = $('.rule__icon')
-const rule = $('.rule')
-const game = $('.game')
+const lowNumber = $('.game__low-number')
+const highNumber = $('.game__hight-number')
+const guessNumber = $('.game__cur-number')
 const checkBtn = $('.game__check')
-const lowNumber = $('.game__lowNumber')
-const hightNumber = $('.game__hightNumber')
-const curNumber = $('.game__curNumber')
-const start = $('.start')
-const end = $('.end')
-const caseOpen = $('.caseOpen')
+const againBTn = $('.game__again')
 const caseClose = $('.caseClose')
-const again = $('.game__again')
+const caseOpen = $('.caseOpen')
 
-const checkNumber = function () {
-    const guess = Number(curNumber.value);
+lowNumber.innerText = lowerBound
+highNumber.innerText = upperBound
+
+const checkNumber = function() {
+    const guess = Number(guessNumber.value)
+
     if (guess === secretNumber) {
-        start.style.display = 'none'
-        end.classList.remove('none')
+        caseClose.classList.add('none')
+        caseOpen.classList.remove('none')
+        caseOpen.classList.add('animate__bounceIn')
 
-        caseOpen.classList.add('none')
-        caseClose.classList.remove('none')
+        checkBtn.classList.add('none')
+        againBTn.classList.remove('none')
+    }
+    else if (guess < secretNumber) {
+        lowNumber.innerText = guess
+        guessNumber.value = ''
+        
+        lowNumber.classList.add('animate__fadeInTopLeft')
     } else {
-        if (guess < secretNumber) {
-            lowNumber.innerText = guess
-        } else {
-            hightNumber.innerText = guess
-        }
-        curNumber.value = ''
+        highNumber.innerText = guess
+        guessNumber.value = ''
+
+        highNumber.classList.add('animate__fadeInTopRight')
     }
 }
 
-ruleBtn.onclick = () => {
-    rule.classList.add('none')
-    game.classList.remove('none')
-
-    game.style.display = 'flex'
-}
-
 checkBtn.onclick = () => {
+    lowNumber.classList.remove('animate__fadeInTopLeft')
+    highNumber.classList.remove('animate__fadeInTopRight')
     checkNumber()
 }
 
-again.onclick = () => {
-    start.style.display = 'flex'
-    end.classList.add('none')
+guessNumber.onkeyup = (e) => {
+    lowNumber.classList.remove('animate__fadeInTopLeft')
+    highNumber.classList.remove('animate__fadeInTopRight')
+    if (e.keyCode === 13) {
+        checkNumber()
+    }
+}
 
-    caseOpen.classList.remove('none')
-    caseClose.classList.add('none')
+againBTn.onclick = () => {
+    caseClose.classList.remove('none')
+    caseClose.classList.add('animate__bounceIn')
+    caseOpen.classList.add('none')
 
-    secretNumber = Math.trunc(Math.random() * 1000) + 1;
+    checkBtn.classList.remove('none')
+    againBTn.classList.add('none')
+
     lowNumber.innerText = lowerBound
-    hightNumber.innerText = upperBound
-    curNumber.value = ''
+    highNumber.innerText = upperBound
+
+    guessNumber.value = ''
+    secretNumber = Math.trunc(Math.random() * 1000) + 1;
     console.log(secretNumber)
 }
