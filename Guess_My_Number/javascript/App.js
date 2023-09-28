@@ -14,6 +14,9 @@ const checkBtn = $('.game__check')
 const againBTn = $('.game__again')
 const caseClose = $('.caseClose')
 const caseOpen = $('.caseOpen')
+const boardColor = $('.board-color')
+const containerBoardColor = $('.board-color__container')
+const listColorItems = $$('.board-color__item')
 
 lowNumber.innerText = lowerBound
 highNumber.innerText = upperBound
@@ -28,6 +31,9 @@ const checkNumber = function() {
 
         checkBtn.classList.add('none')
         againBTn.classList.remove('none')
+
+        boardColor.style.display = 'flex'
+        containerBoardColor.classList.add('animate__bounceIn')
     }
     else if (guess < secretNumber) {
         lowNumber.innerText = guess
@@ -71,3 +77,13 @@ againBTn.onclick = () => {
     secretNumber = Math.trunc(Math.random() * 1000) + 1;
     console.log(secretNumber)
 }
+
+
+listColorItems.forEach(item => {
+    item.onclick = (e) => {
+        e.target.parentNode.style.textDecoration = 'line-through'
+        e.target.parentNode.classList.add('opacity')
+
+        boardColor.style.display = 'none'
+    }
+});
