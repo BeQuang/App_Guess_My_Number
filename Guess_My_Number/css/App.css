@@ -13,169 +13,193 @@ html {
 }
 
 #frame {
-    position: fixed; /* Để hình ảnh cố định và không bị cuộn khi trang web cuộn */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Đặt z-index âm để đảm bảo hình ảnh nằm dưới nội dung khác */
+  position: fixed; /* Để hình ảnh cố định và không bị cuộn khi trang web cuộn */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Đặt z-index âm để đảm bảo hình ảnh nằm dưới nội dung khác */
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 .caseClose {
-    position: fixed;
-    top: 62%;
-    left: 44%;
-    width: 12%;
+  position: fixed;
+  top: 62%;
+  left: 44%;
+  width: 12%;
 }
 
 .caseOpen {
-    position: fixed;
-    top: 60%;
-    left: 41%;
-    width: 16%;
+  position: fixed;
+  top: 60%;
+  left: 41%;
+  width: 16%;
 }
 
-.game {
-    position: fixed;
-    width: 70%;
-    top: 32%;
-    left: 15%;
-    text-align: center;
+.game,
+.bg-img {
+  position: fixed;
+  width: 70%;
+  top: 32%;
+  left: 15%;
+  text-align: center;
 }
 
-.game__group-number {
-    display: flex;
-    justify-content: space-between;
+.bg-img {
+  z-index: -1;
+}
+
+.bg-group-number {
+  padding: 0 5%;
+}
+
+.game__group-number,
+.bg-group-number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-number {
+  width: 20%;
+}
+
+.img-again {
+  width: 24%;
+  margin-top: 5%;
 }
 
 .game__low-number,
 .game__hight-number {
-    background-color: #1D849F;
-    border-radius: 24px;
-    min-width: 28%;
-    min-height: 150px;
-    border: transparent;
-    font-size: 10rem;
-    color: #FFE0AC;
+  background-color: transparent;
+  border-radius: 24px;
+  min-width: 28%;
+  min-height: 150px;
+  border: transparent;
+  font-size: 10rem;
+  color: #ffe0ac;
 }
 
 .game__cur-number {
-    background-color: #1D849F;
-    border-radius: 24px;
-    max-width: 25%;
-    min-height: 150px;
-    border: transparent;
-    font-size: 10rem;
-    color: #FFE0AC;
-    text-align: center;
+  background-color: transparent;
+  border-radius: 24px;
+  max-width: 25%;
+  min-height: 150px;
+  border: transparent;
+  font-size: 10rem;
+  color: #ffe0ac;
+  text-align: center;
+}
+
+.game__cur-number:focus {
+  outline: none;
 }
 
 .game__check,
 .game__again {
-    background-color: #1D849F;
-    border-radius: 24px;
-    min-width: 25%;
-    min-height: 120px;
-    border: transparent;    
-    font-size: 9rem;
-    color: #FFE0AC;
-    text-align: center;
-    margin-top: 80px;
+  background-color: transparent;
+  border-radius: 24px;
+  min-width: 25%;
+  min-height: 120px;
+  border: transparent;
+  font-size: 9rem;
+  color: #ffe0ac;
+  text-align: center;
+  margin-top: 80px;
+  cursor: pointer;
 }
 
 .board-color {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
 .board-color__container {
-    position: relative;
-    width: 80%;
-    height: 60%;
-    top: 25%;
-    left: 10%;
-    background-color: #1D849F;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  position: relative;
+  width: 80%;
+  height: 60%;
+  top: 25%;
+  left: 10%;
+  background-color: #1d849f;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .board-color__list {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
 }
 
 .board-color__color {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
 }
 
 .board-color__title {
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 40px;
-    color: #FFE0AC;
-    max-width: 200px;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 40px;
+  color: #ffe0ac;
+  max-width: 200px;
 }
 
 .bgOrange {
-    background-color: #be3204;
+  background-color: #be3204;
 }
 
 .bgDuckNeckBlue {
-    background-color: #015241
+  background-color: #015241;
 }
 
 .bgPinkChalk {
-    background-color: #feb0c8
+  background-color: #feb0c8;
 }
 
 .bgBananaGreen {
-    background-color: #98cb02
+  background-color: #98cb02;
 }
 
 .bgPurple {
-    background-color: #948fc5
+  background-color: #948fc5;
 }
 
 .bgYellow {
-    background-color: #e8c902
+  background-color: #e8c902;
 }
 
 .bgRed {
-    background-color: #a7030e
+  background-color: #a7030e;
 }
 
 .bgCobaltGreen {
-    background-color: #01218e
+  background-color: #01218e;
 }
 
 .bgHeavenlyBlue {
-    background-color: #55b4e0
+  background-color: #55b4e0;
 }
 
 .bgPurpleHue {
-    background-color: #0d0628
+  background-color: #0d0628;
 }
 
 .bgGrey {
-    background-color: #a6a7a2
+  background-color: #a6a7a2;
 }
 
 .bgStrawberryPink {
-    background-color: #a61944
+  background-color: #a61944;
 }
 
 .opacity {
-    opacity: 0.3;
+  opacity: 0.3;
 }
