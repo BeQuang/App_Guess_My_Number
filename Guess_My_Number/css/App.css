@@ -121,10 +121,10 @@ html {
 
 .board-color__container {
   position: relative;
-  width: 80%;
-  height: 60%;
-  top: 25%;
-  left: 10%;
+  width: 90%;
+  height: 80%;
+  top: 10%;
+  left: 5%;
   background-color: #1d849f;
   border-radius: 100px;
   display: flex;
@@ -139,8 +139,8 @@ html {
 }
 
 .board-color__color {
-  width: 172px;
-  height: 172px;
+  width: 224px;
+  height: 224px;
   border-radius: 50%;
 }
 
