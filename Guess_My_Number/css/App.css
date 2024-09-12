@@ -125,11 +125,12 @@ html {
   height: 80%;
   top: 10%;
   left: 5%;
-  background-color: #1d849f;
+  background-color: #cfa7a4;
   border-radius: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  opacity: 0.3;
 }
 
 .board-color__list {
@@ -148,56 +149,56 @@ html {
   font-size: 4rem;
   text-align: center;
   margin-top: 40px;
-  color: #ffe0ac;
+  color: #7816b5;
   max-width: 200px;
 }
 
 .bgOrange {
-  background-color: #be3204;
+  background-color: #f9ed5f;
 }
 
 .bgDuckNeckBlue {
-  background-color: #015241;
+  background-color: #8fd1dd;
 }
 
 .bgPinkChalk {
-  background-color: #feb0c8;
+  background-color: #f4cde2;
 }
 
 .bgBananaGreen {
-  background-color: #98cb02;
+  background-color: #8f1c17;
 }
 
 .bgPurple {
-  background-color: #948fc5;
+  background-color: #040168;
 }
 
 .bgYellow {
-  background-color: #e8c902;
+  background-color: #62a557;
 }
 
 .bgRed {
-  background-color: #a7030e;
+  background-color: #aea1d9;
 }
 
 .bgCobaltGreen {
-  background-color: #01218e;
+  background-color: #b6b6b4;
 }
 
 .bgHeavenlyBlue {
-  background-color: #55b4e0;
+  background-color: #ebd7bf;
 }
 
 .bgPurpleHue {
-  background-color: #0d0628;
+  background-color: #db693f;
 }
 
 .bgGrey {
-  background-color: #a6a7a2;
+  background-color: #030314;
 }
 
 .bgStrawberryPink {
-  background-color: #a61944;
+  background-color: #c2e57d;
 }
 
 .opacity {
